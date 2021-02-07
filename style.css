@@ -1,0 +1,140 @@
+:root {
+    font-size: 14px;
+}
+
+* {
+    font: 1em;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1366px;
+    width: 90%;
+    margin-right: auto;
+    margin-left:auto;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.top-left > h4 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2rem;
+    margin: 2em 0;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    animation: changeSize 2s infinite alternate;
+}
+
+@keyframes changeSize {
+    0% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.text h2,h6,h3 {
+    font-family: 'Space Mono', monospace;
+}
+
+.text h2 {
+    font-weight: bold 700;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #333333;
+}
+
+.text h6 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #4F4F4F;
+    width: 30rem;
+}
+
+.text h3 {
+    font-weight: bold 700;
+    font-size: 1rem;
+    line-height: 100%;
+    color: #FFFFFF;
+    width: 15rem;
+}
+
+button {
+    background-color: #333333;
+    width: 15rem;
+    height: 4rem;
+}
+
+button:hover {
+    background-color: green;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 1.5em;
+}
+
+footer {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width:860px) {
+    .image img {
+        width: 20rem;
+        height: 15rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        margin: 10rem 0 2rem 0;
+    }
+
+    .right {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-ar;
+            margin-left: 20px;
+            margin-bottom: 2rem;
+        }
+    }
+}
